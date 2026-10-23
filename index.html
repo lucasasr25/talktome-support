@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Official support for TalkToMe! (LLM Launcher). Get help with local AI models, Fubuki, voice, the animation editor, and in-app purchases.">
+  <title>TalkToMe! — Support</title>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #100e1a; color: #f6f3ff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: radial-gradient(ellipse at 90% 0%, #30244b 0, transparent 55%), #100e1a; min-height: 100vh; line-height: 1.65; }
+    main { max-width: 1000px; margin: auto; padding: 48px 24px 64px; }
+    header { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 14px; padding-bottom: 24px; border-bottom: 1px solid #3b334e; }
+    .brand { font-size: 1.3rem; font-weight: 750; letter-spacing: -.04em; }
+    .muted, footer { color: #c4bbd5; }
+    .eyebrow { margin: 44px 0 12px; font-size: .78rem; font-weight: 700; letter-spacing: .15em; color: #d3bdff; text-transform: uppercase; }
+    h1 { font-size: clamp(2.5rem, 7vw, 4.5rem); letter-spacing: -.055em; line-height: 1.08; margin: 0 0 22px; }
+    .intro { font-size: 1.12rem; max-width: 660px; color: #d4ccdf; }
+    .contact { margin: 30px 0 44px; padding: 26px; border: 1px solid #6d5692; border-radius: 20px; background: #211b30; }
+    .contact h2 { margin-top: 0; }
+    .button { display: inline-flex; align-items: center; justify-content: center; padding: 12px 18px; border-radius: 12px; background: #dcc8ff; color: #221333; font-weight: 700; text-decoration: none; min-height: 48px; }
+    a { color: #e2ceff; text-underline-offset: 4px; overflow-wrap: anywhere; }
+    a:focus-visible, summary:focus-visible { outline: 3px solid #71e7ff; outline-offset: 5px; }
+    .email { margin-bottom: 0; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 20px 0 44px; }
+    .card { padding: 23px; border: 1px solid #443852; border-radius: 18px; background: #191522; }
+    h2 { font-size: 1.3rem; letter-spacing: -.025em; }
+    h3 { margin: 0 0 10px; font-size: 1.03rem; }
+    .card p { color: #cfc5dc; margin-bottom: 0; }
+    details { border-bottom: 1px solid #443852; padding: 18px 0; }
+    summary { cursor: pointer; font-weight: 650; padding: 6px 0; }
+    details p { color: #cfc5dc; max-width: 760px; }
+    li { padding: 3px 0; }
+    .safety { color: #cfc5dc; font-size: .95rem; }
+    footer { border-top: 1px solid #443852; margin-top: 44px; padding-top: 22px; font-size: .9rem; }
+    @media (max-width: 720px) { .grid { grid-template-columns: 1fr; } main { padding: 24px 20px 40px; } .contact { padding: 22px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header><span class="brand">TalkToMe!</span><span class="muted">LLM Launcher · Support</span></header>
+    <p class="eyebrow">Help, directly from the developer</p>
+    <h1>Let's get you<br>back to creating.</h1>
+    <p class="intro">Need help with a local AI model, your companion, or an animation? Contact us for technical support, bug reports, purchase issues, and feature requests.</p>
+    <section class="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact support</h2>
+      <p>Email Lucas Reis, the developer of TalkToMe! No account or paid membership is required to contact support.</p>
+      <a class="button" href="mailto:llmtalktome@gmail.com?subject=TalkToMe%20Support">Email support ↗</a>
+      <p class="email"><a href="mailto:llmtalktome@gmail.com">llmtalktome@gmail.com</a></p>
+      <p>Connect with the developer: <a href="https://www.linkedin.com/in/lucas-araujo8b/" target="_blank" rel="noopener noreferrer">Lucas Reis on LinkedIn ↗</a></p>
+    </section>
+    <section aria-labelledby="topics-heading">
+      <h2 id="topics-heading">What can we help with?</h2>
+      <div class="grid">
+        <article class="card"><h3>Local AI &amp; voice</h3><p>Model downloads, GGUF compatibility, loading, conversation performance, microphone access, and speech features.</p></article>
+        <article class="card"><h3>Companion &amp; editor</h3><p>Fubuki, imported characters, customization, emotion reactions, bone mapping, poses, and facial animations.</p></article>
+        <article class="card"><h3>Purchases &amp; feedback</h3><p>AI Plus, Creators Pack, cookies, purchase restoration, feature requests, and reports of problematic model output.</p></article>
+      </div>
+    </section>
+    <section aria-labelledby="before-heading">
+      <h2 id="before-heading">Before you send a report</h2>
+      <p>Include the details below when relevant. This helps us reproduce the issue.</p>
+      <ul>
+        <li>Your device model, operating system, and TalkToMe app version.</li>
+        <li>What you expected, what happened, and the steps to reproduce it.</li>
+        <li>For AI issues: the model name, file size or quantization, and any error message.</li>
+        <li>For purchase issues: the product name, store, and date of purchase.</li>
+        <li>A screenshot or short recording, with private information removed.</li>
+      </ul>
+      <p class="safety">Never send passwords, authentication tokens, payment card details, or unredacted receipts. You do not need to send your private conversation history.</p>
+    </section>
+    <section aria-labelledby="quick-heading">
+      <h2 id="quick-heading">Quick answers</h2>
+      <details><summary>A model will not load, or responses are slow</summary><p>Available memory, model architecture, file size, quantization, and generation settings affect compatibility and speed. Try a smaller compatible model and close other memory-intensive apps. Not every GGUF architecture is supported. Send the model name and exact error if the problem continues.</p></details>
+      <details><summary>Voice input is not working</summary><p>Check microphone and speech-recognition permissions in your device settings. Speech availability depends on your operating system, language, and installed resources; some speech services require an internet connection.</p></details>
+      <details><summary>A purchase is missing</summary><p>Check that you are using the store account that made the purchase, then use the app's purchase-restoration option for eligible non-consumable purchases. Cookies are consumable items and are handled differently. If access or a cookie purchase is still missing, contact support with the product name and purchase date. Do not buy the same item again just to troubleshoot.</p></details>
+      <details><summary>I want to report an AI response</summary><p>AI responses can be inaccurate or inappropriate. Send the model name and a brief description of the issue. Share only an anonymized excerpt if it is necessary; do not include sensitive information. Verify important information independently.</p></details>
+    </section>
+    <section class="contact" aria-labelledby="patreon-heading">
+      <h2 id="patreon-heading">Support the project</h2>
+      <p>Follow TalkToMe on Patreon for project updates and optional ways to support its development. A Patreon membership is not required to contact support.</p>
+      <a class="button" href="https://www.patreon.com/cw/TalkToMeLLM" target="_blank" rel="noopener noreferrer">TalkToMe on Patreon ↗</a>
+    </section>
+    <footer>TalkToMe! (LLM Launcher) · Lucas Reis<br>Support for iOS and Android. This page does not require sign-in and uses no third-party scripts, fonts, or analytics.</footer>
+  </main>
+</body>
+</html>
